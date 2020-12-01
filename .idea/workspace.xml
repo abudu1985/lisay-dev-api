@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58f7413b-aad0-4a3d-955f-48fc85bb13ed" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="58f7413b-aad0-4a3d-955f-48fc85bb13ed" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -153,9 +150,9 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="377" />
-    <option name="y" value="205" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="737" />
+    <option name="y" value="233" />
     <option name="width" value="1098" />
     <option name="height" value="721" />
   </component>
@@ -222,16 +219,15 @@
       <updated>1606670175557</updated>
       <workItem from="1606670176836" duration="7251000" />
       <workItem from="1606762888219" duration="3696000" />
-      <workItem from="1606846833571" duration="2912000" />
+      <workItem from="1606846833571" duration="3568000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13859000" />
+    <option name="totallyTimeSpent" value="14515000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="377" y="205" width="1098" height="721" extended-state="1" />
-    <editor active="true" />
+    <frame x="737" y="233" width="1098" height="721" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3443396" />
       <window_info anchor="bottom" id="TODO" order="6" />
