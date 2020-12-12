@@ -37,9 +37,9 @@ router.post(
     }
 );
 
-// @route   POST api/quote/:id
+// @route   POST api/quotes/:id
 // @desc    Update quote by id
-// @access  Public
+// @access  Private
 router.post('/:id',
     passport.authenticate('jwt', { session: false }),
     (req, res) => {
@@ -59,7 +59,7 @@ router.post('/:id',
 
 // @route   GET api/quotes
 // @desc    Get quotes
-// @access  Public
+// @access  Private
 router.get('/',
     passport.authenticate('jwt', { session: false }),
     (req, res) => {
@@ -69,7 +69,7 @@ router.get('/',
         .catch(err => res.status(404).json({ noquotesfound: 'No quotes found' }));
 });
 
-// @route   GET api/quote/random
+// @route   GET api/quotes/random
 // @desc    Get random quote
 // @access  Public
 router.get('/random', (req, res) => {
@@ -83,9 +83,9 @@ router.get('/random', (req, res) => {
     })
 });
 
-// @route   GET api/quote/:id
+// @route   GET api/quotes/:id
 // @desc    Get quote by id
-// @access  Public
+// @access  Private
 router.get('/:id',
     passport.authenticate('jwt', { session: false }),
     (req, res) => {
@@ -95,5 +95,19 @@ router.get('/:id',
             res.status(404).json({ noquotefound: 'No quote found with that ID' })
         );
 });
+
+// @route   DELETE api/quotes/:id
+// @desc    Delete quote by id
+// @access  Private
+router.delete('/:id',
+    passport.authenticate('jwt', { session: false }),
+    (req, res) => {
+        console.log('req.params.id -> ', req.params.id)
+        Quote.remove({ _id: req.params.id })
+            .then(quote => res.json(quote))
+            .catch(err =>
+                res.status(404).json({ noquotefound: 'No quote found to delete with that ID' })
+            );
+    });
 
 module.exports = router;
