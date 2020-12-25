@@ -20,7 +20,7 @@ const db = process.env.MONGO_LOCAL_CONN_URL;
 
 // Connect to MongoDB
 mongoose
-  .connect(db)
+  .connect(db, { useNewUrlParser: true } )
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err));
 
